@@ -5,11 +5,13 @@ import java.sql.Date;
 public class Commit {
     public String idCommit ;
     private String message ;
+    private String authorName;
     private Date fecha;
 
-    public Commit(String idCommit, String message, Date fecha) {
+    public Commit(String idCommit, String message,String authorName, Date fecha) {
         this.idCommit = idCommit;
         this.message = message;
+        this.authorName = authorName;
         this.fecha = fecha;
     }
     
@@ -25,5 +27,9 @@ public class Commit {
         return fecha;
     }
 
-    
+    public String getAuthorName() {
+        return authorName;
+    }
+
+
 }
