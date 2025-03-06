@@ -1,10 +1,12 @@
-package UnionGit.core;
+package interfaces;
 
-import UnionGit.models.Repository;
 import java.util.Set;
+import createRepository.Repository;
 
-public interface RepositoryManager {
+public interface IRepositoryManager {
     void createRepository(String name);
+
     Repository getRepository(String name);
+
     Set<String> getRepositoryNames();
 }

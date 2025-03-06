@@ -1,14 +1,16 @@
-package UnionGit.models;
+package createRepository;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
+import createBranch.Branch;
+
 public class Repository {
-    private final String name;
-    private final String creationTime;
-    private final List<Branch> branches = new ArrayList<>();
+    private String name;
+    private String creationTime;
+    private List<Branch> branches = new ArrayList<>();
 
     public Repository(String name) {
         this.name = name;
@@ -32,3 +34,4 @@ public class Repository {
         return creationTime;
     }
 }
+

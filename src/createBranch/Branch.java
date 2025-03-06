@@ -1,11 +1,11 @@
-package UnionGit.models;
+package createBranch;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Branch {
-    private final String name;
-    private final List<String> commits = new ArrayList<>();
+    private String name;
+    private List<String> commits = new ArrayList<>();
 
     public Branch(String name) {
         this.name = name;
